@@ -28,7 +28,33 @@ body {
    border-bottom-left-radius: 0px !important;
 }
 
-.row > div {
+.results {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.results > div {
+   width: 25vw;
    text-align: center;
    padding: 1rem;
+}
+
+p {
+   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+   .results > div {
+      width: 33vw;
+   }
+}
+
+@media only screen and (max-width: 455px) {
+   .search {
+      width: 15rem;
+   }
+   .results > div {
+      width: 50vw;
+   }
 }

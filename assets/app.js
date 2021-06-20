@@ -10,7 +10,6 @@ function search(event) {
          let books = data.items;
          books.map((item) => {
             let col = document.createElement("div");
-            col.classList.add("col-sm-4");
             let des = `
                <div>
                   <img src="${item.volumeInfo.imageLinks.thumbnail}">
@@ -25,6 +24,9 @@ function search(event) {
             console.log(item.volumeInfo);
          });
          console.log(books);
+      })
+      .catch((error) => {
+         alert("invalid information");
       });
    document.getElementById("searchBook").value = "";
 }
