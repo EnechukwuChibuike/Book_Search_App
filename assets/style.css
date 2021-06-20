@@ -11,9 +11,24 @@ body {
    border: none;
    outline: none !important;
    width: 20rem;
+   height: 3rem;
+   border-top-left-radius: 1.5rem;
+   border-bottom-left-radius: 1.5rem;
+   border-top-right-radius: 0px !important;
+   border-bottom-right-radius: 0px !important;
 }
 
 .button {
    border: none;
    outline: none;
+   width: 6rem;
+   border-top-right-radius: 1.5rem;
+   border-bottom-right-radius: 1.5rem;
+   border-top-left-radius: 0px !important;
+   border-bottom-left-radius: 0px !important;
+}
+
+.row > div {
+   text-align: center;
+   padding: 1rem;
 }

@@ -17,11 +17,12 @@ function search(event) {
                </div>
                <div>
                   <h6> ${item.volumeInfo.title}</h6>
+                  <p><a target="blank" href="${item.volumeInfo.infoLink}">Know more</a></p>
                </div>
             `;
             col.innerHTML = des;
             row.appendChild(col);
-            console.log(item.volumeInfo.title);
+            console.log(item.volumeInfo);
          });
          console.log(books);
       });
