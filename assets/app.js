@@ -10,7 +10,7 @@ function search(event) {
          let books = data.items;
          books.map((item) => {
             let col = document.createElement("div");
-            col.classList.add("col-md-3");
+            col.classList.add("col-sm-4");
             let des = `
                <div>
                   <img src="${item.volumeInfo.imageLinks.thumbnail}">

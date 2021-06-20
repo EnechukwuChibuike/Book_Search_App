@@ -2,3 +2,18 @@
    margin: 0%;
    padding: 0%;
 }
+
+body {
+   background-color: whitesmoke;
+}
+
+.search {
+   border: none;
+   outline: none !important;
+   width: 20rem;
+}
+
+.button {
+   border: none;
+   outline: none;
+}
