@@ -1,4 +1,5 @@
 function search(event) {
+   document.getElementById("row").innerHTML = "";
    let inputSearch = document.getElementById("searchBook").value;
    const url = `https://www.googleapis.com/books/v1/volumes?q=${inputSearch}`;
    event.preventDefault();
@@ -25,5 +26,4 @@ function search(event) {
          console.log(books);
       });
    document.getElementById("searchBook").value = "";
-   updateSearch();
 }
